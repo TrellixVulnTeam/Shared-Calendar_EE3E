@@ -6,21 +6,7 @@ import { collection, addDoc, query, onSnapshot, doc, deleteDoc, updateDoc, where
 import { getAuth, signOut } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import DoubleCheckPopup from './DoubleCheckPopup.js';
-import { Popup } from './calendar/calendarCSS.js';
-
-const Inner = styledComponents.div`
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 15%;
-  bottom: 15%;
-  margin: auto;
-  background: white;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`
+import { Inner, List, Popup } from './calendar/calendarCSS.js';
 
 const FlexButton = styledComponents.div`
     display: flex;
@@ -30,13 +16,6 @@ const FlexButton = styledComponents.div`
 `
 
 const ManageAuthority = styledComponents.div`
-`
-
-const List = styledComponents.ul`
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  flex: 1 1 150px;
 `
 
 const Item = styledComponents.li`

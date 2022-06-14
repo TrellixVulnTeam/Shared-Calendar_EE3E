@@ -3,28 +3,7 @@ import styledComponents from 'styled-components'
 // Firebase Firestore
 import db from '../firebase.js';
 import { collection, addDoc, query, onSnapshot, doc, deleteDoc, updateDoc, where, getDocs, orderBy } from 'firebase/firestore';
-import { Popup } from './calendar/calendarCSS.js';
-
-const Inner = styledComponents.div`
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 15%;
-  bottom: 15%;
-  margin: auto;
-  background: white;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`
-
-const List = styledComponents.ul`
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  flex: 1 1 150px;
-`
+import { Inner, List, Popup } from './calendar/calendarCSS.js';
 
 const Item = styledComponents.li`
   cursor: pointer;
