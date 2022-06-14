@@ -1,0 +1,44 @@
+/* 客製化 RESET */
+
+*, *::before, *::after { /* 全域 border box > 不用算內距 */
+	box-sizing: border-box;
+}
+
+img { 
+	/* 適應 & 伸縮 */
+	max-width: 100%; 
+	/* 適應 & 伸縮 */
+	height: 100%;
+    /* 圖片會預留 2-3px 在下面 */
+    vertical-align: middle; 
+	object-fit: cover;
+}
+
+/* 預防字體在動態載入時突然變大 */
+html, body {
+    text-size-adjust: none;  
+}
+
+/* 通用樣式 : auto-hide placeholder text upon focus using css */
+input:focus::placeholder {
+	color: transparent;
+}
+
+
+/* 字型設定 */
+body {
+	font-size: 16px;
+	line-height: 1.5;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* Sticky Footer */
+
+html,body, #root {
+	height: 100%;
+}
+
+#root {
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
