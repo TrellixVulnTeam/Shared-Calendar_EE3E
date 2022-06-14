@@ -4,22 +4,7 @@ import styledComponents from 'styled-components'
 import db from '../firebase.js';
 import { collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 import MemberError from './member/MemberError.js';
-import { Popup } from './calendar/calendarCSS.js';
-
-const Inner = styledComponents.div`
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 30%;
-    bottom: 30%;
-    margin: auto;
-    background: white;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
+import { Inner, Popup } from './calendar/calendarCSS.js';
 
 const Flex = styledComponents.div`
     display: flex;
@@ -139,6 +124,7 @@ function SharePopup({friendMail, setFriendMail, uid, userMail, setShowSharePopup
             }}
         >
             <Inner
+                sharePopup
                 onClick={(e) => {
                     e.stopPropagation();
                 }}

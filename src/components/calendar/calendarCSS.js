@@ -106,3 +106,25 @@ export const Popup = styledComponents.div`
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
 `
+
+export const Inner = styledComponents.div`
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    bottom: 15%;
+    margin: auto;
+    background: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: ${props => props.sharePopup ? 'center' : 'space-between'};
+    align-items: ${props => props.sharePopup && 'center'};
+`
+
+export const List = styledComponents.ul`
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex: ${props => props.myself ? '0' : '1'} 1 ${props => props.myself ? '75px' : '125px'};
+`
