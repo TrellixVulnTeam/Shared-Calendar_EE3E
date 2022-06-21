@@ -10,11 +10,15 @@
 | Password | test1234 |
 
 ## Table of Contents
-- [Main Features](#main-features)
+- [Component Tree](#component-tree)
+- [Main Feature](#main-feature)
 - [Technique](#technique)
 - [Contact](#contact)
 
-## Main Features
+## Component Tree
+![](https://i.imgur.com/pZg8wvM.png)
+
+## Main Feature
 ![](https://i.imgur.com/id7HPzl.png)
 
 ## Technique
@@ -23,6 +27,5 @@
 ![](https://i.imgur.com/Lsa2zAw.png)
 
 ## Contact
-👨‍💻 Ming-da, Tsai
-
+👨‍💻 Ming-da, Tsai <br/>
 📧 cguim252@gmail.com
